@@ -31,8 +31,17 @@ body .table th, body .table-stripped td {
   -moz-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
   -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1); }
 
+div .bdr-blk th, div .bdr-blk td {
+  border: 1px solid black; }
+
 .mdl-icon {
   width: 75px; }
+
+.modal-body {
+  overflow-y: auto; }
+
+.ingredients {
+  margin-top: 10px; }
 
 #recipes_filter {
   width: 100%; }
