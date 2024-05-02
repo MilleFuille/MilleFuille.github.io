@@ -91,18 +91,17 @@
   
 </div>
 </div>
-<script src='https://cdn-app2.securiti.ai/consent/form-consent-sdk.js'></script>
-<script>
-window.addEventListener('load',
+
+                                <script src='https://cdn-app2.securiti.ai/consent/form-consent-sdk.js'></script>
+                                <script>window.addEventListener('load',
     FormConsentSDK.initialize({
-        codeGenMetadata:{"formPropertyId":"7","formSelector":"[name*=\"consentForm\"]","subjectIdentifiers":[{"name":"Email address","selector":"[id = \"userEmail\"]","isPrimary":true},{"name":"Full Name","selector":"[id = \"userFullName\"]","isPrimary":false}],"consentIdentifiers":[{"type":"checkbox","name":"marketingPromo","selector":"[id = \"marketingPromo\"]","propertyId":129,"consentValue":"checked"},{"type":"checkbox","name":"marketingAds","selector":"[id = \"marketingAds\"]","propertyId":130,"consentValue":"checked"},{"type":"checkbox","name":"marketingEvent","selector":"[id = \"marketingEvent\"]","propertyId":131,"consentValue":"checked"},{"type":"checkbox","name":"marketingEmail","selector":"[id = \"marketingEmail\"]","propertyId":132,"consentValue":"checked"},{"type":"checkbox","name":"marketingPhone","selector":"[id = \"marketingPhone\"]","propertyId":133,"consentValue":"checked"},{"type":"checkbox","name":"marketingWA","selector":"[id = \"marketingWA\"]","propertyId":134,"consentValue":"checked"}],"consentTrigger":{"action":"click","selector":"[type = \"submit\"]"}},
+        codeGenMetadata:{"formPropertyId":"8","formSelector":"[name*=\"consentForm\"]","subjectIdentifiers":[{"name":"Email address","selector":"[id = \"userEmail\"]","isPrimary":true},{"name":"Full Name","selector":"[id = \"userFullName\"]","isPrimary":true}],"consentIdentifiers":[{"type":"checkbox","name":"marketingPromo","selector":"[id = \"marketingPromo\"]","propertyId":1239,"consentValue":"checked"},{"type":"checkbox","name":"marketingAds","selector":"[id = \"marketingAds\"]","propertyId":1240,"consentValue":"checked"},{"type":"checkbox","name":"marketingEvent","selector":"[id = \"marketingEvent\"]","propertyId":1241,"consentValue":"checked"},{"type":"checkbox","name":"marketingEmail","selector":"[id = \"marketingEmail\"]","propertyId":1242,"consentValue":"checked"},{"type":"checkbox","name":"marketingPhone","selector":"[id = \"marketingPhone\"]","propertyId":1243,"consentValue":"checked"},{"type":"checkbox","name":"marketingWA","selector":"[id = \"marketingWA\"]","propertyId":1244,"consentValue":"checked"}],"consentTrigger":{"action":"click","selector":"[class = \"btn btn-primary\"]"}},
         url: 'https://app2.securiti.ai/privaci/v1/',
         authToken:'a784fcb2-eb78-4ace-a5ff-076d3619b6b5',
         orgId:'1',
         onConsentSuccess: null,
         onConsentFailure: null
     })
-)
-</script>
+)</script>
 </body>
 </html>
