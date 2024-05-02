@@ -1,6 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
+  
+<!-- THIS CODE IS FOR TESTING PURPOSE ONLY, DO NOT USE IT IN PRODUCTION. 
+After adding this script, call setConsentBannerParams({uuid: <unique id> }) to set unique ID for a customer.  -->
+<script>
+(function () {
+	var s = document.createElement('script');
+	s.src = 'https://cdn-app2.securiti.ai/consent/cookie-consent-sdk-loader.js';
+	s.setAttribute('data-tenant-uuid', 'bb4aecab-53f7-4543-8bd2-c1b121e06759');
+	s.setAttribute('data-domain-uuid', '2e2acd4e-616b-4b75-9b5b-c8ceb4922204');
+	s.setAttribute('data-backend-url', 'https://app2.securiti.ai');
+	s.setAttribute('data-securiti-staging-mode', 'true');
+	s.setAttribute('data-skip-css', 'false');
+	s.defer = true;
+	var parent_node = document.head || document.body;
+	parent_node.appendChild(s);
+})()
+</script>
   <title>Bootstrap Online Editor</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
