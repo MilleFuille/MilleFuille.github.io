@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+
+<!-- After adding this script, call setConsentBannerParams({uuid: <unique id> }) to set unique ID for a customer.  -->
+<script>
+(function () {
+	var s = document.createElement('script');
+	s.src = 'https://cdn-app2.securiti.ai/consent/cookie-consent-sdk-loader.js';
+	s.setAttribute('data-tenant-uuid', 'bb4aecab-53f7-4543-8bd2-c1b121e06759');
+	s.setAttribute('data-domain-uuid', '2e2acd4e-616b-4b75-9b5b-c8ceb4922204');
+	s.setAttribute('data-backend-url', 'https://app2.securiti.ai');
+	s.setAttribute('data-skip-css', 'false');
+	s.defer = true;
+	var parent_node = document.head || document.body;
+	parent_node.appendChild(s);
+})()
+</script>
+	
+  <title>Bootstrap Online Editor</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <div class="jumbotron text-center">
+  <h1><b>Manajemen Persetujuan </b></h1>
+  <p>Tetap terhubung bersama kami:</p>
+<form name="consentForm" class="text-left" action="/">
+    <div class="form-group">
+        <label for="userEmail">Email address</label>
+        <input type="email" class="form-control" id="userEmail" placeholder="name@example.com">
+    </div>
+    <div class="form-group">
+        <label for="userFullName">Full Name</label>
+        <input class="form-control" id="userFullName" type="text" placeholder="Your Name">
+    </div>
+    <div class="form-group">
+        <label for="userMessage">Message/Requests</label>
+        <textarea class="form-control" id="userMessage" rows="3"></textarea>
+    </div>
+    <div class="form-group">
+        Marketing Type
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="marketingPromo">
+            <label class="form-check-label" for="marketingPromo">
+                Promotion
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="marketingAds">
+            <label class="form-check-label" for="marketingAds">
+                Personalized Ads based on search history
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="marketingEvent">
+            <label class="form-check-label" for="marketingEvent">
+                Event
+            </label>
+        </div>
+    </div>
+    <div class="form-group">
+        Contact Method
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="marketingEmail">
+            <label class="form-check-label" for="marketingEmail">
+                Email
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="marketingPhone">
+            <label class="form-check-label" for="marketingPhone">
+                SMS
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="marketingWA">
+            <label class="form-check-label" for="marketingWA">
+                Whatsapp
+            </label>
+        </div>
+    </div>
+    <div class="form-group text-center">
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+</form>
+  
+</div>
+</div>
+
+                                <script src='https://cdn-app2.securiti.ai/consent/form-consent-sdk.js'></script>
+                                <script>window.addEventListener('load',
+    FormConsentSDK.initialize({
+        codeGenMetadata:{"formPropertyId":"8","formSelector":"[name*=\"consentForm\"]","subjectIdentifiers":[{"name":"Email address","selector":"[id = \"userEmail\"]","isPrimary":true},{"name":"Full Name","selector":"[id = \"userFullName\"]","isPrimary":true}],"consentIdentifiers":[{"type":"checkbox","name":"marketingPromo","selector":"[id = \"marketingPromo\"]","propertyId":1239,"consentValue":"checked"},{"type":"checkbox","name":"marketingAds","selector":"[id = \"marketingAds\"]","propertyId":1240,"consentValue":"checked"},{"type":"checkbox","name":"marketingEvent","selector":"[id = \"marketingEvent\"]","propertyId":1241,"consentValue":"checked"},{"type":"checkbox","name":"marketingEmail","selector":"[id = \"marketingEmail\"]","propertyId":1242,"consentValue":"checked"},{"type":"checkbox","name":"marketingPhone","selector":"[id = \"marketingPhone\"]","propertyId":1243,"consentValue":"checked"},{"type":"checkbox","name":"marketingWA","selector":"[id = \"marketingWA\"]","propertyId":1244,"consentValue":"checked"}],"consentTrigger":{"action":"click","selector":"[class = \"btn btn-primary\"]"}},
+        url: 'https://app2.securiti.ai/privaci/v1/',
+        authToken:'a784fcb2-eb78-4ace-a5ff-076d3619b6b5',
+        orgId:'1',
+        onConsentSuccess: null,
+        onConsentFailure: null
+    })
+)</script>
+</body>
+</html>
